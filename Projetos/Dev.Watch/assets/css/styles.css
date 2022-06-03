@@ -4,8 +4,6 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
   --first-color: hsl(31, 100%, 70%);
   --button-color: hsl(0, 0%, 17%);
   --button-color-alt: hsl(0, 0%, 21%);
@@ -16,7 +14,7 @@
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
 
-  /*========== Font and typography ==========*/
+
   --body-font: 'Roboto', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -26,7 +24,6 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-bold: 700;
 
@@ -107,7 +104,6 @@ button {
 }
 
 /*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color: hsl(31, 76%, 74%);
   --button-color: hsl(0, 0%, 24%);
@@ -119,17 +115,12 @@ body.dark-theme {
   --border-color: hsl(0, 0%, 20%);
 }
 
-/*========== Button Dark/Light ==========*/
 .change-theme {
   color: var(--title-color);
   font-size: 1.25rem;
   cursor: pointer;
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
 .dark-theme .change-theme,
 .dark-theme .nav__toggle,
 .dark-theme .nav__shop,
@@ -151,7 +142,6 @@ body.dark-theme {
   background: hsl(0, 0%, 30%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
   margin-left: var(--mb-1-5);
@@ -199,7 +189,6 @@ body.dark-theme {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  /*For animation dark mode*/
   transition: .4s;
 }
 
@@ -282,18 +271,15 @@ body.dark-theme {
   cursor: pointer;
 }
 
-/* Show menu */
 .show-menu {
   right: 0;
 }
 
-/* Change background header */
 .scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, .10);
 }
 
-/* Active link */
 .active-link {
   color: var(--first-color);
 }
@@ -635,7 +621,6 @@ body.dark-theme {
   content: '';
 }
 
-/* Swiper class */
 .swiper-button-next,
 .swiper-button-prev {
   top: initial;
@@ -834,7 +819,6 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/* Show Scroll Up*/
 .show-scroll {
   bottom: 3rem;
 }
@@ -958,13 +942,11 @@ body.dark-theme {
   font-weight: var(--font-medium);
 }
 
-/* Show cart */
 .show-cart {
   right: 0;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 320px) {
   .container {
     margin-left: var(--mb-1);
@@ -998,7 +980,6 @@ body.dark-theme {
   }
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px) {
   .home__img-bg {
     width: 340px;
@@ -1175,7 +1156,6 @@ body.dark-theme {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
