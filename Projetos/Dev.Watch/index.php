@@ -151,7 +151,7 @@
 
                     <form action="https://api.staticforms.xyz/submit" class="newsletter__subscribe" method="post">
                         <input type="hidden" name="accessKey" value="f02ab4ca-351e-4ae3-9e1e-c35ee22e36c9"> <!-- Requerimento -->
-                        <input type="hidden" name="redirectTo" value="http://etec199-2021-kaiquesouzasantos.epizy.com/1_projetos/0106/index.php"> <!-- Constancia -->
+                        <input type="hidden" name="redirectTo" value="http://etec199-2021-kaiquesouzasantos.epizy.com/1_projetos/2505/index.php"> <!-- Constancia -->
                         <input type="text" name="honeypot" style="display: none;"> <!-- Proteção de Spam -->
                         <input type="email" name="$E-mail" placeholder="Digite seu e-mail" class="newsletter__input">
                         <button class="button" type="submit">INSCREVER</button>
