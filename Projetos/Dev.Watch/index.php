@@ -121,7 +121,7 @@
 
                     <div class="testimonial__images">
                         <div class="testimonial__square"></div>
-                        <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
+                        <img src="assets/img/img_avaliacao.png" alt="" class="testimonial__img">
                     </div>
                 </div>
             </section>
