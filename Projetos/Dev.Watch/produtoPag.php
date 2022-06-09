@@ -1,5 +1,4 @@
-<?php 
-    require("assets/php/contoller.php");    
-    coletaCookie();
-    header("Location: index.php#produtos");
+<?php 
+    setcookie('categoriaProduto', $_GET['categoria']); 
+    header("Location: index.php#produtos");
 ?>
