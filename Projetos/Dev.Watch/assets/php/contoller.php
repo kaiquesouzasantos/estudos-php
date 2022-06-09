@@ -1,8 +1,4 @@
 <?php 
-    function coletaCookie(){
-        setcookie('categoriaProduto', $_GET['categoria']); 
-    }
-
     function gerenciaProdutos(){
         require("storage/produtosDefault.php");
 
