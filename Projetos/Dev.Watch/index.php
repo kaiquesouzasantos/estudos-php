@@ -29,7 +29,8 @@
 
                 <div class="nav__btns">
                     <i class='bx bx-moon change-theme' id="theme-button"></i>
-
+                    
+                    <a class="nav__shop" href="login.html"><i class='bx bx-user'></i></a>
                     <div class="nav__shop" id="cart-shop"><i class='bx bx-shopping-bag' ></i></div>
                     <div class="nav__toggle" id="nav-toggle"><i class='bx bx-grid-alt' ></i></div>
                 </div>

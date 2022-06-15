@@ -27,7 +27,6 @@
   --font-medium: 500;
   --font-bold: 700;
 
-  /*========== Margenes Bottom ==========*/
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
   --mb-1: 1rem;
@@ -36,7 +35,6 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -75,7 +73,6 @@ body {
   margin: 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  /*For animation dark mode*/
   transition: .4s;
 }
 
