@@ -1,7 +1,7 @@
 <h1 align="center">PHP-APREFEIÇOAMENTO</h1>
 
 <p align="center">
-  <img src="php.svg" width="500">
+  <img src="php.svg" width="400">
 </p>
 
 #
