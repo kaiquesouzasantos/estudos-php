@@ -3,6 +3,15 @@
     ViewController::getHead();
 ?>
 
+<style>
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
 <body>
     <div class="title-container">
         <h1>Exercicio 04 | Cadastro de Aluno e Turma</h1>
