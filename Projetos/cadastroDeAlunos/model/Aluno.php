@@ -2,10 +2,17 @@
     class Aluno{
         private $codAluno, $codTurma, $nomeTurma, $nome, $CPF, $img;
 
-        public function __construct($nome, $CPF, $img){
+        public function construct($nome, $CPF, $img, $codTurma){
             $this->nome = $nome;
             $this->CPF = $CPF;
             $this->img = $img;
+            $this->codTurma = $codTurma;
+        }
+
+        public function increment($codAluno, $nome, $CPF, $img, $codTurma, $nomeTurma){
+            self::construct($nome, $CPF, $img, $codTurma);
+            self::setCodAluno($codAluno);
+            self::setNomeTurma($nomeTurma);
         }
 
         public function getCodAluno(){return $this->codAluno;}
@@ -22,9 +29,5 @@
         public function getNomeTurma(){return $this->nomeTurma;}
         public function setCodTurma($codTurma){$this->codTurma = $codTurma;}
         public function setNomeTurma($nomeTurma){$this->nomeTurma = $nomeTurma;}
-        public function setTurma($codTurma, $nomeTurma){
-            $this->codTurma = $codTurma;
-            $this->nomeTurma = $nomeTurma;
-        }
     }
 ?>

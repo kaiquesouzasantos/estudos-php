@@ -7,22 +7,16 @@
             return Conexao::getConexao();
         }
 
-        private static function getAluno($turma, $nome, $cpf, $img){
-            $aluno = new Aluno($nome, $cpf, $img);
-            $aluno->setCodTurma($turma);
-            
-            return $aluno;
-        }
-
-        public static function cadastrar($turma, $nome, $cpf, $img){
-            $aluno = self::getAluno($turma, $nome, $cpf, $img);
+        public static function cadastrar($nome, $cpf, $img, $codTurma){
+            $aluno = new Aluno();
+            $aluno->construct($nome, $cpf, $img, $codTurma);
 
             $insertAluno = "INSERT INTO tbAluno(codTurma, nomeAluno, cpfAluno, imgAluno) 
-                                VALUES (:turma, :nome, :cpf, :img)";
+                                VALUES (:codTurma, :nome, :cpf, :img)";
             
             $stmt = self::getConexao()->prepare($insertAluno);
             
-            $stmt->bindValue(":turma", $aluno->getCodTurma());
+            $stmt->bindValue(":codTurma", $aluno->getCodTurma());
             $stmt->bindValue(":nome", $aluno->getNome());
             $stmt->bindValue(":cpf", $aluno->getCPF());
             $stmt->bindValue(":img", $aluno->getImg());
@@ -37,9 +31,11 @@
             $stmt = self::getConexao()->query("SELECT * FROM vwAlunos")->fetchAll();
 
             foreach($stmt as $aluno){
-                $objeto = new Aluno($aluno['nomeAluno'], $aluno['cpfAluno'], $aluno['imgAluno']);
-                $objeto->setCodAluno($aluno['codAluno']);
-                $objeto->setTurma($aluno['codTurma'], $aluno['nomeTurma']);
+                $objeto = new Aluno();
+                $objeto->increment(
+                    $aluno['codAluno'], $aluno['nomeAluno'], $aluno['cpfAluno'], $aluno['imgAluno'],
+                    $aluno['codTurma'], $aluno['nomeTurma']
+                );
                 
                 array_push($alunos, $objeto);
             }

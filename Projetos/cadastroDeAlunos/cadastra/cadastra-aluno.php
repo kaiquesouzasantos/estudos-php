@@ -6,7 +6,9 @@
         header("Location: index.php");
     }
 
-    AlunoDAO::cadastrar($_POST['slTurma'], $_POST['txtNome'], $_POST['txtCPF'], AlunoController::getDestino());
+    AlunoDAO::cadastrar(
+        $_POST['txtNome'], $_POST['txtCPF'], AlunoController::getDestino(), $_POST['slTurma']
+    );
 
     header("Location: ../formularios/formulario-aluno.php");
 ?>

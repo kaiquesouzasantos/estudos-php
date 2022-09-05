@@ -7,12 +7,8 @@
             return Conexao::getConexao();
         }
 
-        private static function getTurma($nomeTurma){
-            return new Turma($nomeTurma);
-        }
-
         public static function cadastrar($nomeTurma){
-            $turma = self::getTurma($nomeTurma);
+            $turma = new Turma($nomeTurma);
 
             $insertTurma = "INSERT INTO tbTurma(nomeTurma) VALUES (:nome)";
             
@@ -21,7 +17,7 @@
 
             $stmt->execute();
 
-            return 'Cadastrou';
+            return true;
         }
 
         public static function getTurmas(){
