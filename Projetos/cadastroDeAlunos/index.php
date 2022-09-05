@@ -1,5 +1,5 @@
 <?php 
-    require "controller/ViewController.php";
+    require("controller/ViewController.php");
     ViewController::getHead();
 ?>
 
