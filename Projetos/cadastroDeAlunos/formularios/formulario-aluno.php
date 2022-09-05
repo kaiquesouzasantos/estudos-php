@@ -14,7 +14,7 @@
                 <form method="POST" action="../cadastra/cadastra-aluno.php" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label class="form-label">Nome</label>
-                        <input type="text" class="form-control" name="txtNome" pattern="[a-z\s]+$" required>
+                        <input type="text" class="form-control" name="txtNome" pattern="[aA-zZ\s]+$" required>
                     </div>
                     <div class="mb-3">
                         <div class="col">

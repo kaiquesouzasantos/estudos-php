@@ -10,9 +10,9 @@
         }
 
         public function increment($codAluno, $nome, $CPF, $img, $codTurma, $nomeTurma){
-            self::construct($nome, $CPF, $img, $codTurma);
-            self::setCodAluno($codAluno);
-            self::setNomeTurma($nomeTurma);
+            $this->construct($nome, $CPF, $img, $codTurma);
+            $this->setCodAluno($codAluno);
+            $this->setNomeTurma($nomeTurma);
         }
 
         public function getCodAluno(){return $this->codAluno;}
