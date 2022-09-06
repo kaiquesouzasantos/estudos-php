@@ -2,7 +2,12 @@
     class Turma{
         private $codTurma, $nomeTurma;
 
-        public function __construct($nomeTurma){
+        public function construct($nomeTurma){
+            $this->nomeTurma = $nomeTurma;
+        }
+
+        public function imcrement($codTurma, $nomeTurma){
+            $this->codTurma = $codTurma;
             $this->nomeTurma = $nomeTurma;
         }
 

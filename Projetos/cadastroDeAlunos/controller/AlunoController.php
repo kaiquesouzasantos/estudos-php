@@ -3,6 +3,18 @@
     require_once("../model/Aluno.php");
 
     class AlunoController{
+        public static function verificaPreenchimento(){
+            $campos = $_POST;
+
+            foreach($campos as $campo){
+                if(empty($campo)){
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         public static function validaCPF($cpf){
             $cpf = preg_replace( '/[^0-9]/is', '', $cpf );
             if (strlen($cpf) != 11) {return false;}	

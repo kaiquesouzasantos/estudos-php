@@ -26,7 +26,7 @@
                         <div class="col">
                             <label class="form-label data-form">Turma</label>
                             <select class="form-select" name="slTurma" required>
-                                <?php echo(TurmaController::getTurmas()) ?>
+                                <?php echo(TurmaController::listagemTurmas()) ?>
                             </select>
                         </div>
                     </div>

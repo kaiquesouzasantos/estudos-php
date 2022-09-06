@@ -8,7 +8,8 @@
         }
 
         public static function cadastrar($nomeTurma){
-            $turma = new Turma($nomeTurma);
+            $turma = new Turma();
+            $turma->construct($nomeTurma);
 
             $insertTurma = "INSERT INTO tbTurma(nomeTurma) VALUES (:nome)";
             
@@ -20,12 +21,15 @@
             return true;
         }
 
-        public static function getTurmas(){
-            $turmas = "";
+        public static function getTurmas() : array {
+            $turmas = array();
             $stmt = self::getConexao()->query("SELECT * FROM tbTurma")->fetchAll();
 
             foreach($stmt as $turma){
-                $turmas = $turmas.'<option value="'.$turma['codTurma'].'">'.$turma['nomeTurma'].'</option>';
+                $objeto = new Turma();
+                $objeto->imcrement($turma['codTurma'], $turma['nomeTurma']);
+
+                array_push($turmas, $objeto);
             }
 
             return $turmas;
