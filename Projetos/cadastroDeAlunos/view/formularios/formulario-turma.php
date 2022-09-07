@@ -14,7 +14,7 @@
                 <form method="POST" action="../../operations/cadastra/cadastra-turma.php">
                     <div class=" mb-3">
                         <label class="form-label">Nome da Turma</label>
-                        <input type="text" class="form-control" name="txtNome" require_onced>
+                        <input type="text" class="form-control" name="txtNome" required>
                     </div>               
                     <button type="submit" class="btn btn-primary" id="btnEnviar">Cadastrar</button>
                 </form>

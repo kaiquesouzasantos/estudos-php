@@ -12,11 +12,11 @@
                 <form method="POST" action="../../security/controladores/verificador-acesso.php">
                     <div class=" mb-3">
                         <label class="form-label">Usuário</label>
-                        <input type="text" class="form-control" name="txtUsuario" require_onced>
+                        <input type="text" class="form-control" name="txtUsuario" required>
                     </div>        
                     <div class=" mb-3">
                         <label class="form-label">Senha</label>
-                        <input type="password" class="form-control" name="txtSenha" require_onced>
+                        <input type="password" class="form-control" name="txtSenha" required>
                     </div>         
                     <button type="submit" class="btn btn-primary" id="btnEnviar">Logar</button>
                 </form>

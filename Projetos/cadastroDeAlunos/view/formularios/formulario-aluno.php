@@ -14,18 +14,18 @@
                 <form method="POST" action="../../operations/cadastra/cadastra-aluno.php" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label class="form-label">Nome</label>
-                        <input type="text" class="form-control" name="txtNome" pattern="[aA-zZ\s]+$" require_onced>
+                        <input type="text" class="form-control" name="txtNome" pattern="[aA-zZ\s]+$" required>
                     </div>
                     <div class="mb-3">
                         <div class="col">
                             <label class="form-label data-form">CPF</label>
-                            <input type="text" class="form-control" name="txtCPF" minlength="11" maxlength="15" require_onced>
+                            <input type="text" class="form-control" name="txtCPF" minlength="11" maxlength="15" required>
                         </div>
                     </div>
                     <div class="mb-3">
                         <div class="col">
                             <label class="form-label data-form">Turma</label>
-                            <select class="form-select" name="slTurma" require_onced>
+                            <select class="form-select" name="slTurma" required>
                                 <?php echo(TurmaController::listagemTurmas()) ?>
                             </select>
                         </div>
