@@ -2,14 +2,18 @@
     spl_autoload_register("carregarClasse");
 
     function carregarClasse($nomeClasse){
-        if(file_exists(__DIR__."/model/".$nomeClasse.".php")){
-            require_once(__DIR__."/model/".$nomeClasse.".php");
-        }else if(file_exists(__DIR__."/dao/classes/".$nomeClasse.".php")){
-            require_once(__DIR__."/dao/classes/".$nomeClasse.".php");
-        }else if(file_exists(__DIR__."/dao/connect/".$nomeClasse.".php")){
-            require_once(__DIR__."/dao/connect/".$nomeClasse.".php");
-        }else if(file_exists(__DIR__."/controller/".$nomeClasse.".php")){
-            require_once(__DIR__."/controller/".$nomeClasse.".php");
+        $caminhos = array(
+            "/model/", "/controller/",
+            "/dao/connect/", "/dao/classes/"
+        );
+           
+        
+        foreach ($caminhos as $caminho){
+          $classe = __DIR__.$caminho.$nomeClasse.".php";
+          
+          if(file_exists($classe)){
+            require_once($classe);
+          }
         }
     }
 
