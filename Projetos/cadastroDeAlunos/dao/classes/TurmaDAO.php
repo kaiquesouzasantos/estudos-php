@@ -10,8 +10,6 @@
             $turma = new Turma();
             $turma->construct($nomeTurma);
 
-            echo("aqui");
-
             $insertTurma = "INSERT INTO tbTurma(nomeTurma) VALUES (:nome)";
             
             $stmt = self::getConexao()->prepare($insertTurma);
@@ -28,7 +26,7 @@
 
             foreach($stmt as $turma){
                 $objeto = new Turma();
-                $objeto->imcrement($turma['codTurma'], $turma['nomeTurma']);
+                $objeto->increment($turma['codTurma'], $turma['nomeTurma']);
 
                 array_push($turmas, $objeto);
             }

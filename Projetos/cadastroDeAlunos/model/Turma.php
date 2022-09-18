@@ -6,7 +6,7 @@
             $this->nomeTurma = $nomeTurma;
         }
 
-        public function imcrement($codTurma, $nomeTurma){
+        public function increment($codTurma, $nomeTurma){
             $this->codTurma = $codTurma;
             $this->nomeTurma = $nomeTurma;
         }

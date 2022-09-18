@@ -32,7 +32,7 @@
             </thead>
             <tbody>
                 <?php 
-                    echo(AlunoController::listaRegistros()) 
+                    AlunoController::listaRegistros();
                 ?>
             </tbody>
         </table>
