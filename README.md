@@ -9,8 +9,10 @@
 
 - Diretório contendo desenvolvimento de projetos em PHP com o intuito de práticar e consolidar o conhecimento objetivando o dominio da linguagem.
 
-- *ProfessorMAU*: https://www.youtube.com/watch?v=dPMOYxUBrGQ&list=PLfdNa3wTK3DJgiAKum__BK2kb1_TwN0v-
-- *CRUD*: https://www.youtube.com/watch?v=ecD45s8CUZE&list=PL4Q2E-0Q_2SF_vOHB14c2Ao-5UQv0yLcB
+- *ProfessorMAU*: 
+  - https://www.youtube.com/watch?v=dPMOYxUBrGQ&list=PLfdNa3wTK3DJgiAKum__BK2kb1_TwN0v-
+- *CRUD*: 
+  - https://www.youtube.com/watch?v=ecD45s8CUZE&list=PL4Q2E-0Q_2SF_vOHB14c2Ao-5UQv0yLcB
 
 #
 ### CONTEUDO ABORDADO
