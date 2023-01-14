@@ -1,4 +1,4 @@
-<h1 align=center>PHP-APERFEICOAMENTO</h1>
+<h1 align=center>ESTUDOS-PHP</h1>
 
 <p align="center">
   <img src="php.svg" width="500">
